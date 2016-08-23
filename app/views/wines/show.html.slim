@@ -1,0 +1,22 @@
+p#notice
+  = notice
+
+p
+  strong = 'Название: '
+  = @wine.title
+p
+  strong
+    | Country:
+  = @wine.country
+p
+  strong
+    | Region:
+  = @wine.region
+p
+  strong
+    | Varieties:
+  = @wine.varieties
+
+= link_to 'Edit', edit_wine_path(@wine)
+
+= link_to 'Back', wines_path
