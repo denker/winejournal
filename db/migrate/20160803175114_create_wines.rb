@@ -12,7 +12,21 @@ class CreateWines < ActiveRecord::Migration[5.0]
       t.float   :alcohol
       t.integer :sugar
 
+      t.integer :color_intensity
+      t.string  :color_description
+      t.integer :nose_intensity
+      t.string  :nose_description
+      t.integer :acidity
+      t.integer :body
+      t.integer :aftertaste
+      t.integer :tanins
+      t.integer :bubbles
+      t.string  :taste_description
+      t.integer :rating
+      t.string  :comment
+
       t.timestamps
+      
     end
   end
 end
